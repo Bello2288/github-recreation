@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(12, 14, 23);
+}
+
+
+
+.topbar {
+    display: flex;
+    height: 62px;
+    padding: 0 30px;
+    background-color: #1d1c26;
+}
+
+.github-icon {
+    color: white;
+    font-size: 35px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+#site-search {
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 30px;
+    width: 270px;
+    border: .5px solid #acabb3;
+    background-color: rgb(12, 14, 23);
+    color: #acabb3;
+
+}
+
+.sitebar {
+    display: flex;
+    padding-top: 5px;
+    color: #ffffff;
+}
+.sitebar p {
+    margin-left: 15px;
+}
+
+.end-icons {
+    margin-left: auto;
+    display: flex;
+}
+.end-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.end-icons img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 14px 0 0 0;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 73px;
+    border-bottom: .4px solid #acabb3;
+    font-size: 18px;
+    color: #ffffff;
+}
+.navbar div {
+    padding-left: 25px;
+}
+.navbar a {
+    text-decoration: none;
+    padding-right: 8px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+
+
+.boxes {
+    display: flex;
+    color: #ffffff;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    height: 100%;
+    margin-right: 30px;
+    color: #ffffff;
+}
+.profile-box img {
+border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    transform: translateY(-40px);
+}
+h2 {
+    transform: translateY(-20px);
+    margin: 0;
+}
+h3 {
+    transform: translateY(-20px);
+    color: #acabb3;
+    margin: 0;
+}
+.profile-box p {
+    margin: 0 0 5px 0;
+}
+
+.edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    border-radius: 8%;
+    margin: 0 5px 15px 0;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #acabb3;
+    width: 300px;
+    height: 30px;
+    opacity: 0.8;
+}
+
+.repo-box {
+    display: flex;
+    flex-direction: column;
+    width: 896px;
+    height: 100%;
+    /* border: 1px solid white; */
+    color: #ffffff;
+}
+
+.repo-bar {
+    display: flex;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.type {
+    text-align: center;
+    background-color: rgb(47, 47, 47);
+    border-radius: 8%;
+    margin-right: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    border-color: #acabb3;
+    width: 82px;
+    opacity: 0.8;
+}
+.language {
+    text-align: center;
+    background-color: rgb(47, 47, 47);
+    border-radius: 8%;
+    margin-right: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    border-color: #acabb3;
+    width: 115px;
+    opacity: 0.8;
+}
+.sort {
+    text-align: center;
+    background-color: rgb(47, 47, 47);
+    border-radius: 8%;
+    margin-right: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    border-color: #acabb3;
+    width: 78px;
+    opacity: 0.8;
+}
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 187, 31);
+    border-radius: 8%;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    width: 82px;
+    padding: 5px;
+    /* border: 1px solid #acabb3; */
+    margin-left: 18px; 
+    opacity: 0.8; 
+}
+.hover:hover {
+        opacity: 1;
+}
+
+#repo-search {
+    height: 33px;
+    width: 456px;
+    border: .5px solid #acabb3;
+    background-color: rgb(12, 14, 23);
+    color: #acabb3;
+    margin-right: 10px;
+}
+
+
+.repository section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    height: 130px;
+    width: 885px;
+    border-top: .4px solid #acabb3;
+    /* border-bottom: .4px solid #acabb3; */
+}
+.repo-align {
+    display: flex;
+}
