@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositories</title>
+    <title>Repositories Recreation</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/ecf2f7df81.js" crossorigin="anonymous"></script>
 </head>
-<body> 
-    <div class="topbar">
-        <div class="github-icon"><a class="fa-brands fa-github"></a></div>
-        <div>
-            <input type="search" id="site-search" name="q" placeholder="Search or jump to...">
+<body>
+    <header> 
+        <div class="topbar">
+            <div class="github-icon"><a class="fa-brands fa-github"></a></div>
+            <div>
+                <input type="search" id="site-search" name="q" placeholder="Search or jump to...">
+            </div>
+            <div class="sitebar">
+                <p>Pull Request</p>
+                <p>Issues</p>
+                <p>Marketplace</p>
+                <p>Explore</p>
+            </div>
+            <div class="end-icons">
+                <p><a class="fa-regular fa-bell"></a></p>
+                <p><a class="fa-solid fa-plus"></a></p>
+                <img class="profile-pic" src="images/profile.jpeg" alt="profile pic">
+            </div>
         </div>
-        <div class="sitebar">
-            <p>Pull Request</p>
-            <p>Issues</p>
-            <p>Marketplace</p>
-            <p>Explore</p>
-        </div>
-        <div class="end-icons">
-            <p><a class="fa-regular fa-bell"></a></p>
-            <p><a class="fa-solid fa-plus"></a></p>
-            <img class="profile-pic" src="images/profile.jpeg" alt="profile pic">
-        </div>
-    </div>
+    </header>
 
     <div class="navbar">
         <div><a class="fa-solid fa-book-open"></a>Overview</div>
@@ -35,22 +37,13 @@
         <div><a class="fa-solid fa-star"></a>Stars</div>
     </div>
 
-    <div class="boxes">
-        <div class="profile-box">
-            <img src="images/profile.jpeg" alt="profile pic">
-            <div>
-                <h2>Gregg Bellofatto</h2>
-                <h3>Bello2288</h3>
-            </div>
-            <div class="edit hover">Edit Profile</div>            
-            <p><a class="fa-regular fa-building"></a>   Carolina Code School</p>
-            <p><a class="fa-solid fa-location-dot"></a>   Greenville, SC</p>
-            <p><a class="fa-solid fa-rocket"></a>   Joined 22 days ago</p>
-            <div class="org">Orginazations</div>
-            <div class="org-pic"><img class="org-pic" src="images/org-pic.jpeg" alt=""></div>
-        </div>
+    <main class="main-container">
+        <section class="profile-box">
+            <div class="user"></div>
+            <div class="orgs"></div>
+        </section>
 
-        <div class="repo-box">
+        <section class="repo-box">
             <div class="repo-bar">
                 <section>
                     <input type="search" id="repo-search" name="q" placeholder="Find a repository...">
@@ -83,233 +76,75 @@
                     <div>New</div>
                 </div>
             </div>
-
-            <div class="repository">
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">repositories</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle red" ></div>
-                            <div class="source">HTML</div>
-                            <div class="update">Updated 2 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                            <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">js-war-game</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle yellow" ></div>
-                            <div class="source">JavaScript</div>
-                            <div class="update">Updated 2 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">Pixel-Perfect</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle purple" ></div>
-                            <div class="source">CSS</div>
-                            <div class="update">Updated 2 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">js-etsy-iteration</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle yellow" ></div>
-                            <div class="source">JavaScript</div>
-                            <div class="update">Updated 2 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">octocats</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle purple" ></div>
-                            <div class="source">CSS</div>
-                            <div class="update">Updated 8 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">js-functions</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle yellow" ></div>
-                            <div class="source">JavaScript</div>
-                            <div class="update">Updated 8 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">js-calculator</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle purple" ></div>
-                            <div class="source">CSS</div>
-                            <div class="update">Updated 9 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">sk8</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle red" ></div>
-                            <div class="source">HTML</div>
-                            <div class="update">Updated 14 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">verticle-timeline</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle purple" ></div>
-                            <div class="source">CSS</div>
-                            <div class="update">Updated 19 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <div class="repo-align">
-                            <div class="blue-text">awesomely-ugly-website</div>
-                            <div class="public">Public</div>
-                        </div>
-                        <div class="repo-align">
-                            <div class="circle purple" ></div>
-                            <div class="source">CSS</div>
-                            <div class="update">Updated 21 days ago</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="repo-align">
-                            <div class="repo-align">
-                                <button class="star"><a class="fa-solid fa-star"></a> Star</button>
-                                <button class="caret"><a class="fa-solid fa-caret-down"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
+            <ul class="repository"></ul>
+        </section>
+    </main>
+            
+    <script id="profile-template" type="text/x-handlebars-template">
+        <div class="profile-img-box">
+            <a href="#">
+            <img src="{{avatar_url}}" /></a>
         </div>
-    </div>
-    
+        <div class="profile-names">
+            <div class="name">{{name}}</div>
+            <div class="user-name">{{login}}</div>
+        </div>
+        <button class="edit-button">Edit Profile</button> 
+        <div class="profile-info">
+            <div>
+                <i class="fa-regular fa-building"></i>{{company}}
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>{{location}}
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket"></i>{{updated_at}}
+            </div>
+        </div>
+    </script>
 
+    <script id="orgs-template" type="text/x-handlebars-template">
+        {{#each orgs}}
+        <div class="org-container">Organizations
+          <li class="org-container">
+            <a href="{{url}}"><img src="{{avatar_url}}" /></a>
+          </li>
+        </div>
+        {{/each}}
+    </script>
 
+    <script id="repo-template" type="text/x-handlebars-template">
+        {{#each repos}}
+        <li class="repo-list">
+            <div>
+                <h3>
+                    <a href="{{html_url}}" class="repo-name">{{name}}</a>
+                    <span class="public-label">{{visibility}}</span>
+                </h3>
+                <div class="repo-type">
+                    <span class="fa-solid fa-circle repo-language-color"></span>
+                    <div class="repo-type-language">{{language}}</div>
+                    <div class="repo-type-time">Updated {{updated_at}}</div>
+                </div>
+            </div>
+            <div class="repo-buttons">
+                <button class="star-button">
+                  <i class="fa-regular fa-star"></i>
+                  Star
+                </button>
+                <button class="caret-button">
+                  <i class="fa-solid fa-sort-down"></i>
+                </button>
+            </div>
+        </li>
+        {{/each}}
+    </script>
 
-
-    <script src="main.js"></script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" 
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>

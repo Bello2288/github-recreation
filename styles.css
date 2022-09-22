@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -33,7 +34,8 @@ body {
     margin-left: 20px;
     height: 30px;
     width: 270px;
-    border: .5px solid #acabb3;
+    border: .5px solid #373b41;
+    border-radius: 5px;
     background-color: rgb(12, 14, 23);
     color: #acabb3;
 
@@ -76,7 +78,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     height: 55px;
-    border-bottom: .4px solid #acabb3;
+    border-bottom: .4px solid #373b41;
     font-size: 18px;
     color: #c8d0d8;
     padding-bottom: 15px;
@@ -106,14 +108,10 @@ body {
 ============================        BOXES        ===================================================
 ================================================================================================= */
 
-.boxes {
+.main-container {
     display: flex;
-    color: #ffffff;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 35px;
 }
-
 
 /* =================================================================================================
 ============================     PROFILE  BOX      =================================================
@@ -127,62 +125,73 @@ body {
     margin-right: 30px;
     color: #ffffff;
 }
-.profile-box img {
+.profile-img-box img {
     border-radius: 50%;
     width: 300px;
     height: 300px;
     cursor: pointer;
     transform: translateY(-40px);
 }
-h2 {
+.profile-names {
     transform: translateY(-20px);
     margin: 0;
     font-family: sans-serif;
     color: #e0dfe5;
 }
-h3 {
-    transform: translateY(-20px);
-    color: #acabb3;
+.name {
+    color: #c9c9ce;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 23px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.user-name {
+    color: #9e9da2;
     margin: 0;
     font-family: sans-serif;
 }
-.profile-box p {
-    margin: 0 0 8px 0;
-    font-family: sans-serif;
-    color: #acabb3;
+
+.edit-button {
+    color: #9e9da2;
+    background-color: #21262d;
+    border-top: 1px solid #373b41;
+    border-left: 1px solid #373b41;
+    border-bottom: 1px solid #373b41;
+    border-right: 1px solid #373b41;
+    border-radius: 5px;
+    padding: 3px 16px;
+    font-size: 15px;
+    width: 296px;
+    height: 34px;
+    margin-bottom: 25px;
 }
-.profile-box a {
-    margin-right: 7px;
+.profile-info div {
+    margin-bottom: 7px;
+    color: #9e9da2;
+}
+.profile-info i {
+    margin-right: 10px;
 }
 
-.edit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #161B22;
-    border-radius: 8%;
-    margin: 0 5px 15px 0;
-    color: #ffffff;
-    cursor: pointer;
-    border: 1px solid #acabb3;
-    width: 300px;
-    height: 30px;
-    opacity: 0.8;
-}
-.org {
+.org-container {
     margin-top: 7px;
     padding-top: 18px;
-    border-top: .5px solid #acabb3;
+    border-top: .5px solid #373b41;
     font-size: 16px;
     font-family: sans-serif;
-    color: #acabb3;;
+    color: #9e9da2;
+    list-style-type: none;
 }
-.org-pic img {
+.org-container img {
     width: 34px;
     height: 34px;
     border-radius: 10%;
-    transform: translateY(10px);
 }
+.org-container li {
+    margin-top: 10px;
+}
+
 
 
 /* =================================================================================================
@@ -192,7 +201,7 @@ h3 {
 .repo-box {
     display: flex;
     flex-direction: column;
-    width: 896px;
+    width: 868px;
     height: 100%;
     /* border: 1px solid white; */
     color: #ffffff;
@@ -202,40 +211,52 @@ h3 {
     display: flex;
     margin-top: 20px;
     color: #ffffff;
+    border-bottom: .5px solid #373b41;
+    padding-bottom: 25px;
+    width: 100%;
 }
 
 .type {
     text-align: center;
-    background-color: #21262d;
-    border-radius: 8%;
     margin-right: 5px;
-    color: #ffffff;
     cursor: pointer;
-    border-color: #acabb3;
     width: 82px;
     opacity: 0.8;
+    color: #c9d1d9;
+    background-color: #21262d;
+    border-top: 1px solid #373b41;
+    border-left: 1px solid #373b41;
+    border-bottom: 1px solid #373b41;
+    border-right: 1px solid #373b41;
+    border-radius: 5px;
 }
 .language {
     text-align: center;
-    background-color: #21262d;
-    border-radius: 8%;
     margin-right: 5px;
-    color: #ffffff;
     cursor: pointer;
-    border-color: #acabb3;
     width: 115px;
     opacity: 0.8;
+    color: #c9d1d9;
+    background-color: #21262d;
+    border-top: 1px solid #373b41;
+    border-left: 1px solid #373b41;
+    border-bottom: 1px solid #373b41;
+    border-right: 1px solid #373b41;
+    border-radius: 5px;
 }
 .sort {
     text-align: center;
-    background-color: #21262d;
-    border-radius: 8%;
     margin-right: 5px;
-    color: #ffffff;
     cursor: pointer;
-    border-color: #acabb3;
     width: 78px;
     opacity: 0.8;
+    color: #c9d1d9;
+    background-color: #21262d;
+    border-top: 1px solid #373b41;
+    border-left: 1px solid #373b41;
+    border-bottom: 1px solid #373b41;
+    border-right: 1px solid #373b41;
+    border-radius: 5px;
 }
 .new {
     display: flex;
@@ -259,88 +280,103 @@ h3 {
 #repo-search {
     height: 33px;
     width: 456px;
-    border: .5px solid #acabb3;
+    border: .5px solid #373b41;
+    border-radius: 5px;
     background-color: rgb(12, 14, 23);
     color: #acabb3;
     margin-right: 10px;
 }
 
-
-.repository section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 18px;
-    height: 130px;
-    width: 885px;
-    border-top: .4px solid #acabb3;
-    /* border-bottom: .4px solid #acabb3; */
+.repository {
+   padding: 0;
+   margin-top: 5px;
+   
 }
-.blue-text {
+.repo-list {
+    list-style-type: none;
+    border-bottom: 1px solid #373b41;
+}
+.repo-name {
     color: #5CA8FC;
-    font-size: 24px;
+    font-size: 19px;
     font-family: sans-serif;
-}
-.public {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 0 0 15px;
-    font-size: 12px;
-    font-family: sans-serif;
-    color: #acabb3;
-    border: .5px solid gray;
-    border-radius: 30%;
-    height: 20px;
-    width: 52px;
-}
-.repo-align {
-    display: flex;
-    margin-top: 17px;
-}
-.circle {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%
-}
-.source {
-    font-size: 12px;
-    font-family: sans-serif;
-    margin-left: 5px;
-    color: #acabb3;
-}
-.update {
-    font-size: 12px;
-    font-family: sans-serif;
-    margin-left: 15px;
-    color: #acabb3;
-}
-.red {
-    background-color: #e14d30;
-}
-.yellow {
-    background-color: #f1df65;
-}
-.purple {
-    background-color: #563f7b;
-}
-.star {
-    color: #acabb3;
-    height: 28px;
-    width: 78px;
-    background-color: #21262d;
-    border-color: #acabb3;
-}
-.star a {
-    color: #acabb3;
     text-decoration: none;
 }
-.caret {
-    height: 28px;
-    width: 48px;
-    background-color: #21262d;
-    border-color: #acabb3;
-}
-.caret a {
+.public-label {
+    margin: 0 0 0 10px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
     color: #acabb3;
+    border: .5px solid #373b41;
+    border-radius: 10px;
+    padding: 2px 7px;
+    height: 20px;
+    width: 153px;
 }
+.repo-type {
+    display: flex;
+    align-items: center;
+  }
+.repo-language-color {
+    color: #e34c26;
+    font-size: 12px;
+    margin-right: 4px;
+  }
+.repo-type-language {
+    color: #8b9493;
+    font-size: 12px;
+    margin-right: 20px;
+    font-family: sans-serif;
+  }
+.repo-type-time {
+    color: #8b9493;
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+.repo-buttons {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-55px);
+  }
+.star-button {
+    color: #c9d1d9;
+    background-color: #21262d;
+    border-top: 1px solid #373b41;
+    border-left: 1px solid #373b41;
+    border-bottom: 1px solid #373b41;
+    border-right: 1px solid #373b41;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 3px 16px;
+    font-size: 12px;
+    width: 77px;
+    height: 30px;
+  }
+.star-button i {
+    color: #9e9da2;
+}
+.caret-button {
+    color: #9e9da2;
+    background-color: #21262d;
+    border-top: 1px solid #373b41;
+    border-right: 1px solid #373b41;
+    border-bottom: 1px solid #373b41;
+    border-left: 1px solid #373b41;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 3px 16px;
+    font-size: 12px;
+    width: 35px;
+    height: 30px;
+  }
+.star-button:hover {
+    border: 1px solid #c9d1d9;
+    color: #c9d1d9;
+    background-color: #34393f;
+  }
+.caret-button:hover {
+    border: 1px solid #c9d1d9;
+    color: #c9d1d9;
+    background-color: #34393f;
+  }
