@@ -2,7 +2,6 @@
 // import user from "./user.js";
 // import orgs from "./orgs.js";
 
-const API_KEY = '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';
 
 (function() {
     'use strict'
